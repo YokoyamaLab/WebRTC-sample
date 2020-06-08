@@ -391,25 +391,25 @@ function prepareNewConnection(id) { //SDPを交換したのちpeerとして相�
                 "urls": "stun:sakura.yokoyama.ac:3478"
             }, {
                 "urls": "turn:sakura.yokoyama.ac:5349?transport=udp",
-                "username": "user",
+                "username": "tmustudents2020",
                 "credential": connKeyword
             },
 
             {
                 "urls": "turn:sakura.yokoyama.ac:3478?transport=udp",
-                "username": "user",
+                "username": "tmustudents2020",
                 "credential": connKeyword
             },
 
             {
                 "urls": "turn:sakura.yokoyama.ac:3478?transport=tcp",
-                "username": "user",
+                "username": "tmustudents2020",
                 "credential": connKeyword
             },
 
             {
                 "urls": "turn:sakura.yokoyama.ac:5349?transport=tcp",
-                "username": "user",
+                "username": "tmustudents2020",
                 "credential": connKeyword
             }
         ]

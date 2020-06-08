@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8">
+    <title>WebRTC接続テスト</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a id="tabCtrl" href="#ctrl" class="nav-link" data-toggle="tab">設定</a>
+            </li>
+            <li class="nav-item">
+                <a id="tabTarget" href="#target" class="nav-link" data-toggle="tab">通話</a>
+            </li>
+        </ul>
+        <div id="panes" class="tab-content">
+            <div id="ctrl" class="tab-pane">
+                <div class="form-group row">
+                    <label for="roomName" class="col-sm-2 col-form-label">接続キーワード</label>
+                    <input type="text" class="form-control" id="keyword">
+                </div>
+                <form method="GET" action="" id="formRoom">
+                    <div class="form-group row">
+                        <label for="roomName" class="col-sm-2 col-form-label">部屋名</label>
+                        <input type="text" class="form-control" id="room" name="room">
+                    </div>
+                    <button type="submit" class="btn btn-primary">入室！</button>
+                </form>
+            </div>
+            <div id="target" class="tab-pane">
+                <form>
+                    <div class="form-group row">
+                        <label for="ctrlVideo" class="col-sm-2 col-form-label">ビデオ操作</label>
+                        <input id="ctrlVideo" type="checkbox" data-toggle="toggle" data-on="撮影中" data-off="停止中" data-onstyle="success" data-offstyle="danger" data-width="300">
+                    </div>
+                    <div class="form-group row">
+                        <label for="ctrlConnect" class="col-sm-2 col-form-label">接続操作</label>
+                        <input id="ctrlConnect" type="checkbox" data-toggle="toggle" data-on="接続中" data-off="切断中" data-onstyle="success" data-offstyle="danger" data-width="300" disabled>
+                    </div>
+                </form>
+                <!--
+                WebRTC接続テストSTART押してCONNECT!!<br /> room名はURLの後ろに'?room名'でリロード
+                <br />
+                <button type="button" class="btn btn-primary" onclick="startVideo();">Start Video</button>
+                <button type="button" class="btn btn-danger" onclick="stopVideo();">Stop Video</button> &nbsp;
+                <button type="button" class="btn btn-primary" onclick="connect();">Connect</button>
+                <button type="button" class="btn btn-danger" onclick="hangUp();">Hang Up</button>
+                -->
+                <div id="video_container" class="row">
+                    <video id="local_video" autoplay class="col"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script defer src="webrtc.js"></script>
+
+</html>

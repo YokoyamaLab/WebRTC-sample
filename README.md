@@ -113,17 +113,17 @@ ICEの候補(以下ICECanditate)は、SDPの交換が終わったらひたすら
 
 **部屋名は、通話をする相手と共有すること！**
 
-![参考写真1](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc1_2.jpg)
+![参考写真1](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/webrtc1_2.jpg)
 　
 ## 3. ビデオ操作の「停止中」をクリック
-![参考写真2](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc2_2.jpg)
+![参考写真2](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/webrtc2_2.jpg)
 
 ## 4. ブラウザ側からアクセス許可が来る
-![参考写真3](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc3_2.jpg)
+![参考写真3](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/webrtc3_2.jpg)
 
 ## 5. カメラに映っている自分が映る
-![参考写真4](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc4.jpg)
+![参考写真4](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/webrtc4.jpg)
 
 ## 6. 接続操作の「切断中」をクリック && 同じ部屋名の人とビデオ通話
-![参考写真5](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc5.jpg)
+![参考写真5](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/webrtc5.jpg)
 

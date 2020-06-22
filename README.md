@@ -102,6 +102,28 @@ ICEの候補(以下ICECanditate)は、SDPの交換が終わったらひたすら
 ここまでがWebRTC通信を行うまでの流れである。私はビデオ通話を実装したのでこの後の処理として、videoの処理がいくつかあるが今回は割愛する。
 ここまで読んで、世の中にはびこっているWebRTCやってみた系の記事のコードは読めば理解できると思う。
 
-また、ここまでの流れを書いたサンプルコードがあるので参考にしてほしい。(流れを追って解読するのは少し時間がかかるかもしれない)
+# オンライン会議のやり方
 
-https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/webRTC_%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E9%96%93%E9%80%9A%E4%BF%A1%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%BE%E3%81%A7.html
+## 1. ページにアクセス
+・URLは別途示しています。
+
+## 2. 接続キーワード、部屋名を入力する
+
+**接続キーワードは教えてもらうこと！**
+
+**部屋名は、通話をする相手と共有すること！**
+
+![参考写真1](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc1_2.jpg)
+　
+## 3. ビデオ操作の「停止中」をクリック
+![参考写真2](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc2_2.jpg)
+
+## 4. ブラウザ側からアクセス許可が来る
+![参考写真3](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc3_2.jpg)
+
+## 5. カメラに映っている自分が映る
+![参考写真4](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc4.jpg)
+
+## 6. 接続操作の「切断中」をクリック && 同じ部屋名の人とビデオ通話
+![参考写真5](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/WebRTC_images/webrtc5.jpg)
+

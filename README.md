@@ -51,7 +51,7 @@ ICEとは相手ブラウザに到達する可能性のある通信経路に関�
 
 
 概要図は以下のようになる
-![概要図](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/webRTC.jpg)
+![概要図](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/webRTC.jpg)
 
 
 ### それぞれで行っていること
@@ -94,8 +94,8 @@ SDPを交換し終わった後の処理の仕方として、Trickle ICE とVanil
 ICEの候補(以下ICECanditate)は、SDPの交換が終わったらひたすら総当たりで経路情報を探っている。おそらくこれはブラウザ側が行っている処理。それをSDPの交換が終わってからすぐに送って、送ってもらってを繰り返すうちにつながるやり方が**Trickle ICE**で、すぐには送らずにいろんな候補がたくさん出てきたらまとめて送るというやり方が**Vanilla ICE**。
 **今回はTrickle ICEで実装した**。これを送りあっていくうちにpeer-to-peerの通信が可能になるといった流れだ。
 
-![Vanilla_ICE](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/Vanilla%20ICE.png)
-![Trickle ICE](https://github.com/YokoyamaLab/Hayashida-kazuma/blob/master/Trickle%20ICE.png)
+![Vanilla_ICE](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/Vanilla%20ICE.png)
+![Trickle ICE](https://raw.githubusercontent.com/YokoyamaLab/WebRTC-sample/master/Trickle%20ICE.png)
 
 # 以上！！
 

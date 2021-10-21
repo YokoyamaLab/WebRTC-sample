@@ -73,8 +73,9 @@ RTCSessionDescription = window.RTCSessionDescription || window.webkitRTCSessionD
 RTCIceCandidate = window.RTCIceCandidate || window.webkitRTCIceCandidate || window.mozRTCIceCandidate || window.msRTCIceCandidate;
 
 // ----- use socket.io ---
-const port = 3000;
-const socket = io.connect('https://sakura.yokoyama.ac:3000', {
+const port = 10443;
+// 3000 → 10443
+const socket = io.connect('https://sakura.yokoyama.ac:10443', {
     secure: true
 });
 let room = getRoomName();
